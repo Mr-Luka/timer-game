@@ -1,6 +1,7 @@
 
 import './index.css'
 import Player from './components/Player.jsx';
+import TimerChallenge from './components/TimerChallenge.jsx';
 function App() {
 
 
@@ -8,7 +9,7 @@ function App() {
     <>
       <Player />
       <div className='challenges'>
-
+        <TimerChallenge />
       </div>
     </>
   )
