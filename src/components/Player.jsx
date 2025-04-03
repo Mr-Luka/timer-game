@@ -2,18 +2,18 @@ import {useState, useRef} from 'react';
 
 export default function Player (){
     const playersName = useRef();
-    const[editName, setEditName] = useState('');
+    const [player, setPlayer] = useState('');
 
     function handleClick(){
-        setEditName(playersName.current.value);
+        setPlayer(playersName.current.value);
         playersName.current.value = '';
     }
 
-    
+
 
     return (
          <section id="player">
-            <h2>Welcome {editName ? editName : 'unknown entity'}</h2>
+            <h2>Welcome {player ? player : 'unknown entity'}</h2>
             <p>
                 <input 
                     type='text'
